@@ -23,7 +23,47 @@
     </header>
 
     <main>
+        <section>
+            <h2>Good news, We are hiring!</h2>
+            <p>If you are interested in becoming a reviewer please fill out and submit this form.</p>
+        </section>
+        <section>
+            <em>
+                <p>Required fields are followed by <strong><span aria-label="required">*</span></strong>.</p>
+            </em>
+            <form>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <p>
+                        <label for="fname">First name:
+                            <strong><span aria-label="required">*</span></strong>
+                            <input type="text" required name="firstname" id="fname" size="40">
+                        </label>
+                    </p>
+                    <p>
 
+                        <label for="lname">Last name:
+                            <input type="text" name="lastname" id="lname" size="40">
+                        </label>
+                    </p>
+                    <p>
+
+                        <label for="email">Email Address:
+                            <strong><span aria-label="required">*</span></strong>
+                            <input type="email" required name="email" id="email" size="40">
+                        </label>
+                    </p>
+                </fieldset>
+                <p>
+                    <label for="cv">Upload your CV:
+                        <strong><span aria-label="required">*</span></strong>
+                        <input type="file" required name="cv" id="cv">
+                    </label><br>
+                </p>
+                <p><input type="submit" value="Submit"></p>
+
+            </form>
+        </section>
     </main>
 
     <footer>
