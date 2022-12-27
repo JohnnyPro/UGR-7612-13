@@ -4,3 +4,7 @@ nav ul li {
 .movie-list ul li {
     display: inline;
 }
+.hidden{
+    display: none;
+    height: 0px;
+}
