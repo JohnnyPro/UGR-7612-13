@@ -59,6 +59,7 @@ footer a {
     flex-wrap: wrap;
     justify-content: flex-end;
     background-color: rgb(9, 25, 26);
+    margin-bottom: 10px;
 
 }
 
