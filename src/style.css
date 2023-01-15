@@ -1,10 +1,65 @@
-nav ul li {
-    display: inline;
+body {
+    background-color: rgb(17, 19, 19);
+    color: white;
 }
-.movie-list ul li {
-    display: inline;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
 }
+a {
+    text-decoration: none;
+    color: cyan;
+}
+
+h1 {
+    font-size: 3em;
+}
+
 .hidden{
     display: none;
     height: 0px;
 }
+
+.bold {
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background-color: rgb(9, 25, 26);
+
+}
+
+.navigation__item {
+    display: flex;
+    padding: 10px 20px;
+
+
+}
+.navigation__item a {
+    color: white;
+}
+.navigation__item--active {
+    background-color: rgb(39, 39, 39);
+}
+.navigation__item--active a{
+    color: rgb(249, 249, 249);
+
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .navigation {   
+      flex-direction: column;
+    }
+  }
