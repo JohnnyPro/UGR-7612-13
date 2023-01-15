@@ -1,7 +1,13 @@
+html, body {
+    height: 100%;
+}
 body {
     background-color: rgb(17, 19, 19);
     color: white;
+    display: flex;
+    flex-direction: column;
 }
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -17,6 +23,23 @@ h1 {
     font-size: 3em;
 }
 
+
+footer {
+    margin-top: auto;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    
+}
+footer a {
+    display: flex;
+    padding: 5px 10px;
+}
 .hidden{
     display: none;
     height: 0px;
@@ -57,9 +80,8 @@ h1 {
 }
 
 
-
 @media screen and (max-width: 700px) {
-    .navigation {   
+    .navigation, footer {   
       flex-direction: column;
     }
   }
