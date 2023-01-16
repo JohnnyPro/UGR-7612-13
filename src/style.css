@@ -8,7 +8,7 @@ body {
     flex-direction: column;
     font-family: 'Ubuntu', Verdana, sans-serif;
     font-weight: 400;
-    line-height: 1.8em;
+    line-height: 2em;
     font-size: 1.2rem;
 
 }
@@ -45,6 +45,16 @@ main {
     background-color:  rgb(17, 19, 19);
     background-color:rgb(10, 10, 10);
 
+}
+
+input[type=button], input[type=submit], input[type=reset], input::file-selector-button {
+
+    background-color: #32cbce;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    margin: 4px 4px 20px;
+    cursor: pointer;
 }
 
 footer {
@@ -120,13 +130,28 @@ footer a {
 
 
 }
-ul.list {
+.list {
     display: block;
     list-style-type: square;
     list-style-position: inside;
 }
-.list__items {
 
+.query {
+    margin: 15px 0px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.query__label {
+    margin: 0;
+    flex: 1;
+}
+.query__input {
+    margin: 0;
+    padding: 1%;
+    flex: 3;
 }
 
 .hidden{
@@ -141,7 +166,12 @@ ul.list {
 .center {
     text-align: center;
 }
-
+.right {
+    float: right;
+}
+.red {
+    color: rgb(202, 47, 47);
+}
 ::-webkit-scrollbar {
     border: 1px solid #5b5b5b;
     border-radius: 10px;
@@ -152,8 +182,21 @@ ul.list {
     border: 1px solid #5b5b5b;
     border-radius: 10px;
 }
+@media screen and (max-width: 800px) {
+
+    .query {   
+      flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 700px) {
     .navigation, footer, .slideshow {   
       flex-direction: column;
     }
-  }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        width: 80%;
+    }
+}

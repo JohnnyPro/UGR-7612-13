@@ -38,33 +38,36 @@
             <form>
                 <fieldset>
                     <legend>Personal Information</legend>
-                    <p>
-                        <label for="fname">First name:
-                            <strong><span aria-label="required">*</span></strong>
-                            <input type="text" required name="firstname" id="fname" size="40">
+                    <p class="query">
+                        <label class="query__label" for="fname">First name
+                            <strong><span class="red" aria-label="required">*</span></strong>
                         </label>
-                    </p>
-                    <p>
+                        <input class="query__input" type="text" required name="firstname" id="fname">
 
-                        <label for="lname">Last name:
-                            <input type="text" name="lastname" id="lname" size="40">
-                        </label>
                     </p>
-                    <p>
+                    <p class="query">
 
-                        <label for="email">Email Address:
-                            <strong><span aria-label="required">*</span></strong>
-                            <input type="email" required name="email" id="email" size="40">
+                        <label class="query__label" for="lname">Last name</label>
+                        <input class="query__input" type="text" name="lastname" id="lname">
+
+                    </p>
+                    <p class="query">
+
+                        <label class="query__label" for="email">Email Address
+                            <strong><span class="red" aria-label="required">*</span></strong>
                         </label>
+                        <input class="query__input" type="email" required name="email" id="email">
+
                     </p>
                 </fieldset>
-                <p>
-                    <label for="cv">Upload your CV:
-                        <strong><span aria-label="required">*</span></strong>
-                        <input type="file" required name="cv" id="cv">
-                    </label><br>
+                <p class="query">
+                    <label class="query__label" for="cv">Upload your CV
+                        <strong><span class="red" aria-label="required">*</span></strong>
+                    </label>
+                    <input class="query__input" type="file" required name="cv" id="cv">
+
                 </p>
-                <p><input type="submit" value="Submit"></p>
+                <input class="right" type="submit" value="Submit">
 
             </form>
         </section>
