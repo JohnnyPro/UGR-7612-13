@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+    <script src="script.js"></script>
     <title>Apply</title>
 
     <link rel="stylesheet" href="style.css">
@@ -35,20 +36,20 @@
             <em>
                 <p>Required fields are followed by <strong><span aria-label="required">*</span></strong>.</p>
             </em>
-            <form>
+            <form id="applyForm" name="applyForm" onsubmit="return validateApply()">
                 <fieldset>
                     <legend>Personal Information</legend>
                     <p class="query">
                         <label class="query__label" for="fname">First name
                             <strong><span class="red" aria-label="required">*</span></strong>
                         </label>
-                        <input class="query__input" type="text" required name="firstname" id="fname">
+                        <input class="query__input" type="text" name="fname" id="fname">
 
                     </p>
                     <p class="query">
 
                         <label class="query__label" for="lname">Last name</label>
-                        <input class="query__input" type="text" name="lastname" id="lname">
+                        <input class="query__input" type="text" name="lname" id="lname">
 
                     </p>
                     <p class="query">
@@ -56,7 +57,7 @@
                         <label class="query__label" for="email">Email Address
                             <strong><span class="red" aria-label="required">*</span></strong>
                         </label>
-                        <input class="query__input" type="email" required name="email" id="email">
+                        <input class="query__input" type="email" name="email" id="email">
 
                     </p>
                 </fieldset>
@@ -64,7 +65,7 @@
                     <label class="query__label" for="cv">Upload your CV
                         <strong><span class="red" aria-label="required">*</span></strong>
                     </label>
-                    <input class="query__input" type="file" required name="cv" id="cv">
+                    <input class="query__input" type="file" name="cv" id="cv">
 
                 </p>
                 <input class="right" type="submit" value="Submit">

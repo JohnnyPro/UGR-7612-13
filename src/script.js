@@ -11,3 +11,24 @@ function validateFeedback() {
     }
     return true;
 }
+
+
+function validateApply() {
+    console.log('here');
+    if (document.applyForm.fname.value == "") {
+        alert("First name must be filled out");
+        document.applyForm.fname.focus();
+        return false;
+    }
+    if (document.applyForm.email.value == "") {
+        alert("Email must be filled out");
+        document.applyForm.email.focus();
+        return false;
+    }
+    if (document.applyForm.cv.value == "") {
+        alert("Please upload your CV");
+        return false;
+    }
+
+    return true;
+}
