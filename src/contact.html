@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+    <script src="script.js"></script>
     <title>Contact</title>
 
     <link rel="stylesheet" href="style.css">
@@ -30,23 +31,23 @@
     <main>
         <section>
             <h2 class="center"><strong>Contact Us</strong></h2>
-            <form class="center">
+            <form class="center" name="feedbackForm" onsubmit="return validateFeedback()">
                 <p>
                     <label for="uname">
                         <span class="hidden">Username</span></label>
-                    <input type="text" name="username" id="uname" size="40" maxlength="50" placeholder="Username">
+                    <input type="text" name="name" id="name" size="40" maxlength="50" placeholder="Name">
                 <p>
                     <label for="email">
                         <span class="hidden">Email</span></label>
-                    <input type="email" name="email" id="email" size="40" maxlength="50" required
-                        placeholder="Email Address">
+                    <input type="email" name="email" id="email" size="40" maxlength="50" placeholder="Email Address">
                 </p>
                 <p>
                     <label for="fback">
                         <span class="hidden">Feedback area</span></label>
-                    <textarea cols="40" id="fback" required rows="10" placeholder="Type your feedback..."></textarea>
+                    <textarea cols="40" name="fback" id="fback" rows="10"
+                        placeholder="Type your feedback..."></textarea>
                 </p>
-                <input class="center" type="submit" name="send" value="Send">
+                <input class="center" type="submit" value="Send">
             </form>
             <p class="center">Alternatively you can <a href="mailto:yohannesdessie212002@gmail.com">email us</a>.</p>
         </section>
