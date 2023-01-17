@@ -221,6 +221,8 @@ footer a {
 .movie-catalogue__item {
     /* display: flex;
     flex-direction: row; */
+    text-decoration: none;
+    color: white;
     display: grid;
     padding: 1em 3em;
     grid-template-columns: 1fr 60%;
