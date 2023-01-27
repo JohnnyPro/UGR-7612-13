@@ -30,10 +30,12 @@
         </nav>
     </header>
 
-    <main>
-        <div class="trailer-container">
-            <iframe class="trailer" src="https://www.youtube.com/embed/FvvOBZq_Oog?autoplay=1&mute=1"
-                title="Video Trailer">
+    <main class="container">
+
+        <!-- Styled this with regular Css, styling iframes with bootstrap seems to be a discontinued feature -->
+        <div class="embed-responsive embed-responsive-4by3 trailer-container">
+            <iframe class="embed-responsive-item trailer"
+                src="https://www.youtube.com/embed/FvvOBZq_Oog?autoplay=1&mute=1" allowfullscreen title="Video Trailer">
             </iframe>
         </div>
         <p><strong>The Gentlemen</strong> is a well constructed story that starts slow but that will end in a
@@ -41,21 +43,21 @@
             the cast really cements this movie as one for the ages. A 2 hours long British crime drama, which doesn't
             take itself too serious. All in all very enjoyable classic Guy Ritchie film.
         </p>
-        <table>
+        <table class="table table-dark">
             <tr>
-                <th>Title</th>
+                <th class="bg-light text-dark text-center">Title</th>
                 <td>The Gentlemen</td>
             </tr>
             <tr>
-                <th>Director</th>
+                <th class="bg-light text-dark text-center">Director</th>
                 <td>Guy Ritchie</td>
             </tr>
             <tr>
-                <th>Cast</th>
+                <th class="bg-light text-dark text-center">Cast</th>
                 <td>Matthew McConaughey, Charlie Hunnam, Michelle Dockery, ...</td>
             </tr>
             <tr>
-                <th>Score</th>
+                <th class="bg-light text-dark text-center">Score</th>
                 <td>9/10</td>
             </tr>
         </table>

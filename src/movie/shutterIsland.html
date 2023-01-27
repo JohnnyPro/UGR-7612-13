@@ -30,10 +30,12 @@
         </nav>
     </header>
 
-    <main>
-        <div class="trailer-container">
-            <iframe class="trailer" src="https://www.youtube.com/embed/v8yrZSkKxTA?autoplay=1&mute=1"
-                title="Video Trailer">
+    <main class="container">
+
+        <!-- Styled this with regular Css, styling iframes with bootstrap seems to be a discontinued feature -->
+        <div class="embed-responsive embed-responsive-4by3 trailer-container">
+            <iframe class="embed-responsive-item trailer"
+                src="https://www.youtube.com/embed/v8yrZSkKxTA?autoplay=1&mute=1" allowfullscreen title="Video Trailer">
             </iframe>
         </div>
         <p>
@@ -46,21 +48,21 @@
             actors at their finest to completely engross you in the film
         </p>
 
-        <table>
+        <table class="table table-dark">
             <tr>
-                <th>Title</th>
+                <th class="bg-light text-dark text-center">Title</th>
                 <td>Shutter Island</td>
             </tr>
             <tr>
-                <th>Director</th>
+                <th class="bg-light text-dark text-center">Director</th>
                 <td>Martin Scorsese</td>
             </tr>
             <tr>
-                <th>Cast</th>
+                <th class="bg-light text-dark text-center">Cast</th>
                 <td>Leonardo DiCaprio, Mark Ruffalo, Ben Kingsley...</td>
             </tr>
             <tr>
-                <th>Score</th>
+                <th class="bg-light text-dark text-center">Score</th>
                 <td>9/10</td>
             </tr>
         </table>

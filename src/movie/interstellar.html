@@ -31,12 +31,15 @@
         </nav>
     </header>
 
-    <main>
-        <div class="trailer-container center">
-            <iframe class="trailer" src="https://www.youtube.com/embed/Lm8p5rlrSkY?autoplay=1&mute=1"
-                title="Video Trailer">
+    <main class="container">
+
+        <!-- Styled this with regular Css, styling iframes with bootstrap seems to be a discontinued feature -->
+        <div class="embed-responsive embed-responsive-4by3 trailer-container">
+            <iframe class="embed-responsive-item trailer"
+                src="https://www.youtube.com/embed/Lm8p5rlrSkY?autoplay=1&mute=1" allowfullscreen title="Video Trailer">
             </iframe>
         </div>
+
 
         <p><strong>Interstellar</strong> is amongst the best movies of all time. The story, the acting, the script, the
             cinematography, the effects, the sound and the production as a whole is all absolute 10/10's.
@@ -44,21 +47,21 @@
             But what beats all of that is Hans Zimmers compositions. How he continues to churn out perfection to the
             senses is mindblowing.
         </p>
-        <table>
+        <table class="table table-dark">
             <tr>
-                <th>Title</th>
+                <th class="bg-light text-dark text-center">Title</th>
                 <td>Interstellar</td>
             </tr>
             <tr>
-                <th>Director</th>
+                <th class="bg-light text-dark text-center">Director</th>
                 <td>Christopher Nolan</td>
             </tr>
             <tr>
-                <th>Cast</th>
+                <th class="bg-light text-dark text-center">Cast</th>
                 <td>Matthew McConaughey, Anne Hathaway, Jessica Chastain, ...</td>
             </tr>
             <tr>
-                <th>Score</th>
+                <th class="bg-light text-dark text-center">Score</th>
                 <td>10/10</td>
             </tr>
         </table>

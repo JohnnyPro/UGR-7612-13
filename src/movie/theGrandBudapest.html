@@ -30,10 +30,12 @@
         </nav>
     </header>
 
-    <main>
-        <div class="trailer-container">
-            <iframe class="trailer" src="https://www.youtube.com/embed/mXRztrOK47I?autoplay=1&mute=1"
-                title="Video Trailer">
+    <main class="container">
+
+        <!-- Styled this with regular Css, styling iframes with bootstrap seems to be a discontinued feature -->
+        <div class="embed-responsive embed-responsive-4by3 trailer-container">
+            <iframe class="embed-responsive-item trailer"
+                src="https://www.youtube.com/embed/mXRztrOK47I?autoplay=1&mute=1" allowfullscreen title="Video Trailer">
             </iframe>
         </div>
 
@@ -45,21 +47,21 @@
             The bottom line is that all these weird factors work together to make a film that you'll probably
             enjoy--but, like me, you won't be exactly sure why.
         </p>
-        <table>
+        <table class="table table-dark">
             <tr>
-                <th>Title</th>
+                <th class="bg-light text-dark text-center">Title</th>
                 <td>The Grand Budapest Hotel</td>
             </tr>
             <tr>
-                <th>Director</th>
+                <th class="bg-light text-dark text-center">Director</th>
                 <td>Wes Anderson</td>
             </tr>
             <tr>
-                <th>Cast</th>
+                <th class="bg-light text-dark text-center">Cast</th>
                 <td>Ralph Fiennes, Tony Revolori, F. Murray Abraham, ...</td>
             </tr>
             <tr>
-                <th>Score</th>
+                <th class="bg-light text-dark text-center">Score</th>
                 <td>8/10</td>
             </tr>
         </table>
