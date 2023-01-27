@@ -31,28 +31,39 @@
         </nav>
     </header>
 
-    <main>
+    <main class="container">
         <section>
-            <h2 class="center"><strong>Contact Us</strong></h2>
-            <form class="center" name="feedbackForm" onsubmit="return validateFeedback()">
-                <p>
-                    <label for="uname">
-                        <span class="hidden">Username</span></label>
-                    <input type="text" name="name" id="name" size="40" maxlength="50" placeholder="Name">
-                <p>
-                    <label for="email">
-                        <span class="hidden">Email</span></label>
-                    <input type="email" name="email" id="email" size="40" maxlength="50" placeholder="Email Address">
-                </p>
-                <p>
-                    <label for="fback">
-                        <span class="hidden">Feedback area</span></label>
-                    <textarea cols="40" name="fback" id="fback" rows="10"
-                        placeholder="Type your feedback..."></textarea>
-                </p>
-                <input class="center" type="submit" value="Send">
+            <h2 class="h1 pt-4 pb-3 pl-0 mt-5 font-weight-bold text-center"><strong>Contact Us</strong></h2>
+            <form name="feedbackForm" onsubmit="return validateFeedback()">
+                <div class="mx-auto d-flex flex-column justify-content-center align-items-center">
+                    <p class="row-6 input-group w-50">
+                        <label for="uname">
+                            <span class="d-none">Username</span></label>
+                        <input type="text" class="form-control" name="name" id="name" size="40" maxlength="50"
+                            placeholder="Name">
+                    </p>
+                    <p class="row-6 input-group w-50">
+                        <label for="email">
+                            <span class="d-none">Email</span></label>
+                        <input type="email" class="form-control" name="email" id="email" size="40" maxlength="50"
+                            placeholder="Email Address">
+                    </p>
+                    <p class="row-6 input-group w-50">
+                        <label for="fback">
+                            <span class="d-none">Feedback area</span></label>
+                        <textarea cols="40" class="form-control" name="fback" id="fback" rows="5"
+                            placeholder="Type your feedback..."></textarea>
+                    </p>
+                    <div class="row">
+                        <input class="mx-auto btn btn-primary px-5 py-2" type="submit" value="Send">
+                    </div>
+                </div>
             </form>
-            <p class="center">Alternatively you can <a href="mailto:yohannesdessie212002@gmail.com">email us</a>.</p>
+            <p class="mx-auto text-center mt-5 mb-3">Alternatively you can <a
+                    href="mailto:yohannesdessie212002@gmail.com">email
+                    us</a>.
+            </p>
+
         </section>
     </main>
 
