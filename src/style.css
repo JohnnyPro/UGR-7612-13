@@ -343,14 +343,23 @@ footer {
 
 }
 
+::-webkit-scrollbar:horizontal{
+    border-radius: 10px;
+}
 ::-webkit-scrollbar-thumb:horizontal{
-    background: rgb(138, 158, 159);
+    background: rgb(16, 20, 20);
     border: 1px solid rgb(171, 171, 171);
     border-radius: 10px;
 }
+
 @media screen and (max-width: 600px) {
     .container {
         width: 90%;
     }
 
+}
+@media screen and (max-width: 800px) {
+    .slideshow {   
+      flex-direction: column;
+    }
 }
