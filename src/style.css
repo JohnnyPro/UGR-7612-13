@@ -326,6 +326,11 @@ a {
     text-decoration: none;
     color: cyan;
 }
+
+footer {
+    background-color: black;
+    font-size: 0.8em;
+}
 .navBg {
     background-color: rgb(9, 25, 26);
 
@@ -333,9 +338,15 @@ a {
 .container {
     width: 60%;
 }
-footer {
-    background-color: black;
-    font-size: 0.8em;
+.slideshow {
+    background-color: rgb(9, 25, 26);
+
+}
+
+::-webkit-scrollbar-thumb:horizontal{
+    background: rgb(138, 158, 159);
+    border: 1px solid rgb(171, 171, 171);
+    border-radius: 10px;
 }
 @media screen and (max-width: 600px) {
     .container {
