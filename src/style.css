@@ -342,6 +342,9 @@ footer {
     background-color: rgb(9, 25, 26);
 
 }
+.red {
+    color: rgb(202, 47, 47);
+}
 
 ::-webkit-scrollbar:horizontal{
     border-radius: 10px;

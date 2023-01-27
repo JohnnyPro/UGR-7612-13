@@ -31,48 +31,52 @@
         </nav>
     </header>
 
-    <main>
+    <main class="container">
         <section>
-            <h2>Good news, We are hiring!</h2>
+            <h2 class="h1 pt-4 pb-3 pl-0 mt-5 font-weight-bold">Good news, We are hiring!</h2>
             <p>If you are interested in becoming a reviewer please fill out and submit this form.</p>
         </section>
         <section>
             <em>
                 <p>Required fields are followed by <strong><span aria-label="required">*</span></strong>.</p>
             </em>
-            <form id="applyForm" name="applyForm" onsubmit="return validateApply()">
-                <fieldset>
+            <form id="applyForm" class="container-fluid" name="applyForm" onsubmit="return validateApply()">
+                <fieldset class="form-group px-0">
                     <legend>Personal Information</legend>
-                    <p class="query">
-                        <label class="query__label" for="fname">First name
+                    <p class="form-group row mx-0">
+                        <label class="text-md-left text-center col-sm-12 col-md-3" for="fname">First name
                             <strong><span class="red" aria-label="required">*</span></strong>
                         </label>
-                        <input class="query__input" type="text" name="fname" id="fname">
+                        <input class="col" type="text" name="fname" id="fname">
 
                     </p>
-                    <p class="query">
+                    <p class="form-group row mx-0">
 
-                        <label class="query__label" for="lname">Last name</label>
-                        <input class="query__input" type="text" name="lname" id="lname">
+                        <label class="text-md-left text-center col-sm-12 col-md-3" for="lname">Last name</label>
+                        <input class="col" type="text" name="lname" id="lname">
 
                     </p>
-                    <p class="query">
+                    <p class="form-group row mx-0">
 
-                        <label class="query__label" for="email">Email Address
+                        <label class="text-md-left text-center col-sm-12 col-md-3" for="email">Email Address
                             <strong><span class="red" aria-label="required">*</span></strong>
                         </label>
-                        <input class="query__input" type="email" name="email" id="email">
+                        <input class="col" type="email" name="email" id="email">
 
                     </p>
                 </fieldset>
-                <p class="query">
-                    <label class="query__label" for="cv">Upload your CV
+                <p class="form-group row mt-3 mx-0">
+                    <label class="text-md-left text-sm-center col-sm-12 col-md-3 custom-file-label" for="cv">Upload your
+                        CV
                         <strong><span class="red" aria-label="required">*</span></strong>
                     </label>
-                    <input class="query__input" type="file" name="cv" id="cv">
+                    <input class="col custom-file-input" type="file" name="cv" id="cv">
 
                 </p>
-                <input class="right" type="submit" value="Submit">
+                <div class="container-fluid mt-2 mb-5 w-100 d-flex flex-row justify-content-end">
+                    <input class="btn btn-primary " type="submit" value="Submit">
+
+                </div>
 
             </form>
         </section>
