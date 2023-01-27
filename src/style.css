@@ -333,6 +333,10 @@ a {
 .container {
     width: 60%;
 }
+footer {
+    background-color: black;
+    font-size: 0.8em;
+}
 @media screen and (max-width: 600px) {
     .container {
         width: 90%;
